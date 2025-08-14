@@ -2,7 +2,7 @@ name: Upstream Sync
 
 on:
   schedule:
-    - cron: "0 0 * * *" # run every day 0:00
+    - cron: "0 4 * * *" # run every day 4:00
   workflow_dispatch:
 
 permissions:
@@ -25,7 +25,7 @@ jobs:
         id: sync
         uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
         with:
-          upstream_sync_repo: LunaTechLab/MoonTV
+          upstream_sync_repo: 66xx5120/MoonTV
           upstream_sync_branch: main
           target_sync_branch: main
           target_repo_token: ${{ secrets.GITHUB_TOKEN }}
