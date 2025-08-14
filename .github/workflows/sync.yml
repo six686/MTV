@@ -2,7 +2,7 @@ name: Upstream Sync
 
 on:
   schedule:
-    - cron: "0 4 * * *" # run every day 12:00pm
+    - cron: "0 0 * * *" # run every day 0:00
   workflow_dispatch:
 
 permissions:
